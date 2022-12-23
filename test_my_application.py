@@ -11,4 +11,6 @@ def before_each(page: Page):
 
 def test(page: Page):
     
+    page.wait_for_timeout(5000)
+
     expect(page).to_have_url("https://playwright.dev/")

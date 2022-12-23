@@ -46,6 +46,9 @@ pytest --headed filename.py
 
 만약, 브라우저를 여러개로 테스트 하려면
 pytest --headed filename.py --browser firefox --browser webkit
+
+만약, 실패한 테스트에 한해서만 스크린샷 캡쳐를 하고 싶다면,
+--screenshot only-on-failure 옵션을 추가
 ```
 
 ### pytest.fixture
@@ -72,3 +75,4 @@ playwright codegen "테스트 할 웹 브라우저 URL"
 
 이렇게 입력하면, 해당 URL로 이동된 브라우저 하나랑 나의 액션 하나하나에 반응하는 Debugger가 뜨는데, Recoding and Playback 방식을 사용할 수 있다.
 ```
+
